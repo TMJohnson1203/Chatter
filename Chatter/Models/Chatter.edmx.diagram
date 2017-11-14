@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2505c81bce7343fb8f5b6cfdc3287c9e" Name="Diagram1">
+        <EntityTypeShape EntityType="ChatterModel.Chat" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.Follow" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.Like" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.sysdiagram" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ChatterModel.UserInfo" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <AssociationConnector Association="ChatterModel.FK_Chat_Like" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Like_Chat" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_UserInfo_Chat" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Follow_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_UserInfo_Follow" ManuallyRouted="false" />
+        <AssociationConnector Association="ChatterModel.FK_Like_UserInfo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
